@@ -1,0 +1,275 @@
+/* style guide */
+@font-face {
+    font-family: "Baguille";
+    src: url("../fonts/fontBaguille.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    scroll-behavior: smooth; 
+}
+
+h1 {
+    font-family: "Baguille";
+    font-size: 5rem;
+    /* line-height: 1.5; */
+    color: #172554;
+}
+
+h2 {
+    font-family: "Oxygen";
+    color: #8da9c4;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+p {
+    font-family: "Oxygen";
+    font-size: 1.5rem;
+    color: #8f8f8f;
+}
+
+/* heading and title section */
+#title {
+    /* background-color: #dbeafe; */
+    text-align: center; 
+}
+
+body{ 
+    background: linear-gradient(to bottom, #dbeafe , #fff 35%);
+}
+
+/* section to have a line under logo and nav */
+.fullLine{
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin: 0 4% 0 4%;   
+    border-color: #8da9c4;
+}
+
+/* container for logo and nav */
+.container-nav{
+    padding: 3% 4% 0% 4%;
+}
+
+/* bio text */
+.container-fluid{
+    padding: 7% 18% 5% 18%;
+}
+
+
+.logo-image {
+    width: 32px;
+    /* margin: 20px; */
+}
+
+.logo-image:hover {
+    cursor: pointer;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-family: "Oxygen";
+    font-weight:300;
+    font-size: 1.2rem;
+    color: #8f8f8f;
+}
+
+
+/* for different sections */
+.sectionTitle{
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:#8f8f8f;
+}
+
+.sectionDescription{
+    font-family: "Oxygen"; 
+    color:#8da9c4;
+    font-size: 1.2rem;
+}
+
+
+/* projects section */
+#projects{
+    padding: 2% 4%;
+    background-color: #fff;
+    border-radius: 40px;
+
+}
+
+.project-box {
+    text-align: center;
+    padding: 1% 1% 2% 1%;
+    border-radius: 20px;
+    object-fit: contain; 
+}
+
+.coverImage{
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-box:hover{
+    cursor: pointer;
+}
+.project-box:hover .coverImage{
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px #e2e8f0;
+}
+
+.projectTitle{
+    font-family: Baguille;
+    font-size: 2rem;
+    color: #172554;
+    text-align: left;
+    padding: 4% 0 0 0;
+    line-height: 1;
+}
+
+.projectDescription{
+    font-family: Oxygen;
+    font-size: 1.2rem;
+    color: #8f8f8f;
+    text-align: left;
+}
+
+
+/* play section */
+#play {
+    padding: 0% 4%;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.carousel-item {
+    /* padding: 7% 15%; */
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-responsive{
+    border-radius: 20px;
+}
+
+.activity-title {
+    font-family: "Oxygen";
+    color: #8da9c4;
+    font-size: 1.4rem;
+}
+
+.activityBox {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.textBox {
+    flex-grow: 1;
+}
+
+.iconBox {
+    margin-left:auto;
+    padding-left: 3%;
+    font-size: 24px;
+}
+
+.icon {
+    color: #EBC4D7;
+}
+
+
+/* footer */
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+.footer-icon {
+    color:#172554;
+}
+
+.footer-icon:hover {
+    color: #8da9c4;
+}
+
+.footer-text {
+    font-family: "Oxygen";
+    color:#8f8f8f;
+    margin: 1%
+}
+
+
+/* case study */
+.project-body {
+    /* background: linear-gradient(to bottom, #dbeafe 2%, #fff 30%);;*/
+    background: linear-gradient(#dbeafe 30%, #fff 50%);
+}
+
+
+.project-title {
+    background-color: #dbeafe;
+    text-align: center;
+}
+
+.bannerImage{
+    width: 100%;
+    border-radius: 40px;
+    display:block;
+    margin: 2% auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+    max-width:76%;
+}
+
+.project-details{
+    font-family: "Oxygen";
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #8da9c4;
+    text-align: left;
+    /* transition: text-align 0.3s ease; */
+}
+
+.project-details-text {
+    font-weight: 400;
+    color: #172554;
+}
+
+@media (min-width: 768px){
+    .project-details{
+        text-align: center;
+    }
+}
+
+.project-writeup {
+    padding: 0% 4% 2% 4%;
+    background-color: #fff;
+    border-radius: 40px;
+    
+}
+
+.body-text {
+    background-color: #FFF;
+    font-family: "Oxygen";
+    padding: 0% 12%;
+    font-size:1.2rem;
+    color: #172554;
+}
+
+.emphasized-text{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
