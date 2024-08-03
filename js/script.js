@@ -21,7 +21,7 @@ document.getElementById("trolley").addEventListener("click", function() {
   window.location.href = "trolley.html";
 });
 
-// click to open trolley
+// click to open mobileorder
 document.getElementById("mobileorder").addEventListener("click", function() {
   window.location.href = "mobileorder.html";
 });
