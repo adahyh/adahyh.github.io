@@ -17,6 +17,12 @@ h1 {
     color: #172554;
 }
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust size for phones */
+    }
+}
+
 h2 {
     font-family: "Oxygen";
     color: #8da9c4;
