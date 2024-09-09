@@ -274,6 +274,12 @@ body{
     font-size: 1.4rem;
 }
 
+.sub-header {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #C49FB7;
+}
+
 .highlight-text{
     color: #E255A1;
 }
