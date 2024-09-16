@@ -5,6 +5,10 @@ homeLogo.addEventListener("click", function() {
   window.location.href = "index.html";
 });
 
+// click to open reconnect
+document.getElementById("reconnect").addEventListener("click", function() {
+  window.location.href = "reconnect.html";
+});
 
 // click to open menolearn
 document.getElementById("menolearn").addEventListener("click", function() {
