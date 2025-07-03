@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     font-family: "Oxygen";
-    color: #8da9c4;
+    color: #8f8f8f;
 }
 
 h3 {
@@ -58,7 +58,8 @@ body{
     border-bottom-style: solid;
     border-width: 1px;
     margin: 0 4% 0 4%;   
-    border-color: #8da9c4;
+    /* border-color: #8da9c4; */
+    border-color: #F2CFDB;
 }
 
 /* container for logo and nav */
@@ -71,9 +72,45 @@ body{
     padding: 7% 18% 5% 18%;
 }
 
-.header-container{
-    padding:7% 6% 5% 6%;
+#bio{
+    color: #8da9c4;
 }
+.header-container{
+    padding:7% 6% 0% 6%;
+}
+
+
+/* header scroll */
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scrolling-text span {
+    font-size: 3rem;
+    color: #8da9c4;
+    opacity: 0.8;
+    mix-blend-mode: screen;
+    font-family: "Oxygen"
+ 
+  }
 
 .logo-image {
     width: 32px;
@@ -101,7 +138,8 @@ body{
     font-family: "Oxygen";
     font-weight: 400;
     font-size: 1.6rem;
-    color:#8f8f8f;
+    /* color:#8f8f8f; */
+    color:#F2CFDB;
 }
 
 .sectionDescription{
