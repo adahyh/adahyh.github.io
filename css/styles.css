@@ -44,8 +44,9 @@ a:link {
 
 /* heading and title section */
 #title {
-    /* background-color: #dbeafe; */
-    text-align: center; 
+    background: radial-gradient(circle at 30% 80%, #dbeafe 0%, white 72%);
+    /* background: radial-gradient(circle at 30% center, #FFC0C3 0%, #FFE7E9 72%); */
+    text-align: left; 
 }
 
 body{ 
@@ -70,6 +71,9 @@ body{
     padding: 7% 18% 5% 18%;
 }
 
+.header-container{
+    padding:7% 6% 5% 6%;
+}
 
 .logo-image {
     width: 32px;
@@ -298,5 +302,5 @@ body{
 
 .rounded-gif {
     border-radius: 15px; 
-    border: 1px solid #D9D9D9;
+    border: 1px solid #D9D9D9; 
 }
