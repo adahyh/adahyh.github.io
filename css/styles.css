@@ -38,19 +38,226 @@ p {
     color: #8f8f8f;
 }
 
-a:link {
-  color: #E255A1;
+a:link, a:visited {
+  color: #E4749D;
 }
+
+
+
+/* NEW TEST */
+#bagsection{
+    background-color: #F9F0E5;
+}
+#newtestsection{
+    padding: 2% 6%;
+    /* background-color: #fff; */
+    border-radius: 40px;
+}
+.compact img {
+    width: 10rem;
+}
+
+.camera img {
+    width: 15rem;
+}
+
+.coin img {
+    width: 8rem;
+    transform: rotate(-10deg);
+}
+
+
+
+
+.itemlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    text-decoration: none; /* Optional: removes underline */
+    color:inherit;
+    align-items: center;
+}
+
+.itemrow {
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction:column;
+}
+
+.bagbox{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* margin-top: 100px; */
+}
+
+#rightbag img{ 
+    width: 400px;
+}
+
+.container{
+    display:flex;
+    justify-content:space-evenly;
+    height: 300px; 
+}
+.container-left{
+    display:flex;
+}
+
+.label{
+    font-size: 1.5rem;
+    font-family: "Baguille";
+    color: #6A4946;
+    
+}
+
+/* item spacing */
+
+#com img{
+    width: 140px;
+    margin-top: 0px;
+}
+
+#pouch img{
+    width: 120px;
+    margin-top: 0px;
+    rotate:-8deg;
+}
+
+#cam img{
+    width: 200px;
+}
+#cam {
+    margin-top: 0px;
+    margin-right:0px;
+}
+
+#com {
+    margin-top: 0px;
+}
+
+#pouch {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+/* size size spacing */
+@media (min-width: 576px) {
+    #cam {
+        margin-right: 250px;
+    }
+    
+    #pouch {   
+        margin-left: 340px;
+    }
+}
+
+/* medium size spacing */
+@media (min-width: 768px) {
+    #rightbag {
+        margin-top: 16px;
+    }
+    #cam {
+        margin-right: 0px;  
+    }
+    .bagbox {
+        align-items: center;
+        justify-content: center;
+    }
+    #pouch {   
+        margin-left: 0px;
+    }
+}
+
+/* large size spacing */
+@media (min-width: 992px) {
+   #com {
+    align-content: center;
+   }
+    #cam {
+        margin-top: 80px; 
+        margin-right: 0px;
+    }
+
+    #pouch {
+        margin-top: 250px;
+    }
+    #rightbag {
+        margin-top: 100px;
+    }
+    .bagbox {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .ex {
+        padding: 0px 50px 0px 50px;
+    }
+
+    #com img{
+        width: 160px;
+        margin-top: 0px;
+    }
+    
+    #pouch img{
+        width: 160px;
+        margin-top: 0px;
+        rotate:-6deg;
+        margin-right: 20px;
+    }
+    
+    #cam img{
+        width: 240px;
+    }
+    
+    #rightbag img{ 
+        width: 480px;
+    }
+}
+
+.floating:hover {
+  animation: floatUpDown 1.5s ease-in-out infinite;
+  
+}
+
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* end new */
+
+
+
 
 /* heading and title section */
 #title {
-    background: radial-gradient(circle at 30% 80%, #dbeafe 0%, white 72%);
+    background: #F9F0E5;
+    /* background: radial-gradient(circle at 30% 80%, #dbeafe 0%, white 72%); */
     /* background: radial-gradient(circle at 30% center, #FFC0C3 0%, #FFE7E9 72%); */
     text-align: left; 
 }
 
+/* .polka {
+    background-image: 
+      radial-gradient(#6A4946 17.6%, transparent 18.4%),
+      radial-gradient(#6A4946 17.6%, transparent 18.4%);
+    background-position: 0px 0px, 16px 16px;
+    background-size: 32px 32px;
+    background-color: #FBE8EE;
+  } */
+
 body{ 
-    background: linear-gradient(to bottom, #dbeafe , #fff 35%);
+    /* background: linear-gradient(to bottom, #dbeafe , #fff 35%); */
+    background-color: white;
+}
+
+.project-body{
+    background-color:white;
+    /* background: radial-gradient(circle at 30% center, #FFC0C3 0%, #FFE7E9 72%); */
+    text-align: left; 
 }
 
 /* section to have a line under logo and nav */
@@ -59,6 +266,7 @@ body{
     border-width: 1px;
     margin: 0 4% 0 4%;   
     /* border-color: #8da9c4; */
+    /* border-color: #F2CFDB; */
     border-color: #F2CFDB;
 }
 
@@ -73,15 +281,42 @@ body{
 }
 
 #bio{
-    color: #8da9c4;
+    /* color: #8da9c4; */
+    color: #6A4946;
 }
+
+/* envelope animation */
+@keyframes shake-rotate {
+    0%   { transform: rotate(0deg); }
+    10%  { transform: rotate(3deg); }
+    20%  { transform: rotate(-3deg); }
+    30%  { transform: rotate(2deg); }
+    40%  { transform: rotate(-2deg); }
+    50%  { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+  
+.shake-image {
+    animation: shake-rotate 3s infinite ease-in-out;
+    transform-origin: center center;
+}
+
+.fixed-size-img {
+    max-width: 100%;      /* scale down if needed */
+    height: auto;         /* maintain aspect ratio */
+    width: auto;          /* don’t force width */
+    max-height: 300px;    /* optional: limit max size */
+    object-fit: contain;  /* ensures full image fits without distortion */
+  }
+
+
 .header-container{
     padding:7% 6% 0% 6%;
 }
 
 
 /* header scroll */
-.scrolling-text-container {
+/* .scrolling-text-container {
     width: 100%;
     overflow: hidden;
     padding: 10px 0;
@@ -110,7 +345,7 @@ body{
     mix-blend-mode: screen;
     font-family: "Oxygen"
  
-  }
+  } */
 
 .logo-image {
     width: 32px;
@@ -119,6 +354,10 @@ body{
 
 .logo-image:hover {
     cursor: pointer;
+}
+
+.navbar{
+    color:#6A4946;
 }
 
 .nav-item{
@@ -132,6 +371,9 @@ body{
     color: #8f8f8f;
 }
 
+#intro{
+    color:#E4749D;
+}
 
 /* for different sections */
 .sectionTitle{
@@ -139,12 +381,14 @@ body{
     font-weight: 400;
     font-size: 1.6rem;
     /* color:#8f8f8f; */
-    color:#F2CFDB;
+    /* color:#F2CFDB; */
+    color: #E4749D;
 }
 
 .sectionDescription{
     font-family: "Oxygen"; 
-    color:#8da9c4;
+    /* color:#8da9c4; */
+    color: #6A4946;
     font-size: 1.2rem;
 }
 
@@ -181,7 +425,8 @@ body{
 .projectTitle{
     font-family: Baguille;
     font-size: 2rem;
-    color: #172554;
+    /* color: #172554; */
+    color: #6A4946;
     text-align: left;
     padding: 4% 0 0 0;
     line-height: 1;
@@ -190,15 +435,16 @@ body{
 .projectDescription{
     font-family: Oxygen;
     font-size: 1.2rem;
-    color: #8f8f8f;
+    /* color: #8f8f8f; */
+    color: #BB9681;
     text-align: left;
 }
 
 
 /* play section */
-#play {
+#marketing {
     padding: 0% 6%;
-    background-color: #fff;
+    /* background-color: #F9F0E5; */
     border-radius: 40px;
 }
 
@@ -267,12 +513,13 @@ body{
 /* case study */
 .project-body {
     /* background: linear-gradient(to bottom, #dbeafe 2%, #fff 30%);;*/
-    background: linear-gradient(#dbeafe 30%, #fff 50%);
+    background: white;
 }
 
 
 .project-title {
-    background-color: #dbeafe;
+    /* background-color: #dbeafe; */
+    background: radial-gradient(circle at 30% 80%, #dbeafe 0%, white 72%);
     text-align: center;
 }
 
