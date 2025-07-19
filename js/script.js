@@ -10,10 +10,10 @@ document.getElementById("daws").addEventListener("click", function() {
   window.location.href = "daw.html";
 });
 
-// click to open reconnect
-document.getElementById("reconnect").addEventListener("click", function() {
-  window.location.href = "reconnect.html";
-});
+// // click to open reconnect
+// document.getElementById("reconnect").addEventListener("click", function() {
+//   window.location.href = "reconnect.html";
+// });
 
 // click to open menolearn
 document.getElementById("menolearn").addEventListener("click", function() {
@@ -30,7 +30,7 @@ document.getElementById("trolley").addEventListener("click", function() {
   window.location.href = "trolley.html";
 });
 
-// click to open mobileorder
+// click to open trolley
 document.getElementById("mobileorder").addEventListener("click", function() {
   window.location.href = "mobileorder.html";
 });
