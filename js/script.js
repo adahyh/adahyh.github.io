@@ -5,6 +5,11 @@ homeLogo.addEventListener("click", function() {
   window.location.href = "index.html";
 });
 
+// click to open 528
+document.getElementById("528").addEventListener("click", function() {
+  window.location.href = "528.html";
+});
+
 // click to open daw
 document.getElementById("daws").addEventListener("click", function() {
   window.location.href = "daw.html";
@@ -34,3 +39,5 @@ document.getElementById("trolley").addEventListener("click", function() {
 document.getElementById("mobileorder").addEventListener("click", function() {
   window.location.href = "mobileorder.html";
 });
+
+
