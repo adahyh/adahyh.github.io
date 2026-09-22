@@ -1,13 +1,15 @@
-const homeLogo = document.getElementById("logoImage");
+// const homeLogo = document.getElementById("logoImage");
 
-homeLogo.addEventListener("click", function() {
+// homeLogo.addEventListener("click", function() {
   
-  window.location.href = "index.html";
-});
+//   window.location.href = "index.html";
+// });
+
 
 // click to open 528
 document.getElementById("528").addEventListener("click", function() {
   window.location.href = "528.html";
+  
 });
 
 // click to open daw
